@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/color_btn_bg_black"
+        android:text="@string/activity_login_tv_login"
+        android:textColor="@color/color_btn_tv_yellow"
+        android:textAllCaps="false"
+
+        />
+
+    <TextView
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/color_btn_bg_black"
+        android:text="@string/activity_login_tv_register"
+        android:textColor="@color/color_btn_tv_yellow"
+        android:gravity="center"
+
+        />
+
+
+</LinearLayout>
