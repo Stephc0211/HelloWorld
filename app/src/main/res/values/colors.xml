@@ -3,9 +3,14 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
-    
+
     <color name="color_btn_bg_white">#FFFFFF</color>
     <color name="color_btn_bg_black">#000000</color>
-    
+
+   <!-- 0-9 A B C D E F -->
     <color name="color_btn_tv_yellow">#FFFB00</color>
+
+
+
+
 </resources>

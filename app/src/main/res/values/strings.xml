@@ -1,7 +1,14 @@
 <resources>
     <string name="app_name">HelloWorld</string>
 
+    <!-- login_activity -->
+    <string name="activity_login_et_hint_username">用户名</string>
     <string name="activity_login_tv_register">注册</string>
     <string name="activity_login_tv_login">登陆</string>
+
+    <!-- main_activity -->
+    <string name="activity_main_tv_logout">退出</string>
+
+
 
 </resources>
