@@ -9,6 +9,11 @@
     <!-- main_activity -->
     <string name="activity_main_tv_logout">退出</string>
 
+    <string name="owen_layout_and_widget_activity_tv_text_one">第一个TV</string>
+    <string name="owen_layout_and_widget_activity_tv_text_two">第二个TV</string>
+    <string name="owen_layout_and_widget_activity_tv_text_three">第三个TV</string>
+
+
 
 
 </resources>

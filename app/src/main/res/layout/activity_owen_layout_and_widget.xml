@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Owen.OwenLayoutAndWidgetActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorAccent">
+
+        <TextView
+            android:id="@+id/tv_one"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/color_btn_tv_yellow"
+            android:text="@string/owen_layout_and_widget_activity_tv_text_one"
+            android:textColor="@color/color_btn_bg_black"
+            android:layout_gravity="top"
+            android:gravity="center"
+            android:drawableStart="@mipmap/ic_launcher_round"
+            android:drawablePadding="5dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_two"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/owen_layout_and_widget_activity_tv_text_two"
+            android:textColor="@color/color_btn_bg_white"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/tv_three"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/owen_layout_and_widget_activity_tv_text_three"
+            android:textColor="@color/color_btn_bg_white"
+            android:layout_gravity="bottom|end"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_btn_bg_white"
+        >
+
+        <Button
+            android:id="@+id/btn_one"
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:text="@string/owen_layout_and_widget_activity_tv_text_one"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:background="@color/color_btn_tv_yellow"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_centerInParent="true"
+
+            />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="2dp"
+            android:background="@color/color_btn_bg_black"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="10dp"
+            android:background="@color/color_btn_bg_black"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            />
+
+        <Button
+            android:id="@+id/btn_two"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:background="@drawable/ic_launcher_foreground"
+            android:layout_toEndOf="@id/btn_one"
+            android:layout_below="@id/btn_one"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="20dp"
+            />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        >
+
+        <EditText
+            android:id="@+id/et_test"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:inputType="numberPassword"
+            />
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@mipmap/ic_launcher_round"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginStart="10dp"-->
+            <!--/>-->
+
+
+
+    </FrameLayout>
+
+</LinearLayout>
