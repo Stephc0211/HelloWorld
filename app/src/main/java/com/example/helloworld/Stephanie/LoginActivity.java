@@ -19,10 +19,10 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
 
         mBtnRegister = findViewById(R.id.btn_register);
-        mTvLogin = findViewById(R.id.btn_login);
+        mTvLogin = findViewById(R.id.tv_login);
 
         mBtnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
