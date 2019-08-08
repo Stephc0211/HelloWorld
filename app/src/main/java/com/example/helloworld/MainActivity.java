@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivity";
 
-    public static final String KEY_USER_NAME = "mUserName";
+    public static final String  KEY_USER_NAME = "mUserName";
 
     private TextView mTvUserName;
     private Button mBtnLogout;
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 mUserName = mTvUserName.getText().toString().trim();
-                Log.d(TAG, "onClick: " + mUserName);
+                Log.d(TAG,"onClick: " + mUserName);
                 Intent intentBack = new Intent();
                 intentBack.putExtra(KEY_USER_NAME,mUserName);
                 setResult(RESULT_OK,intentBack);
