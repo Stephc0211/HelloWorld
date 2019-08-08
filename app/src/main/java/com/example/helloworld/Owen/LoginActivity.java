@@ -45,7 +45,11 @@ public class LoginActivity extends AppCompatActivity {
         mBtnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(LoginActivity.this,"我点击了注册按钮",Toast.LENGTH_SHORT).show();
+//                Toast.makeText(LoginActivity.this,"我点击了注册按钮",Toast.LENGTH_SHORT).show();
+                // 跳转
+                Intent intent = new Intent(LoginActivity.this, OwenLayoutAndWidgetActivity.class);
+                intent.putExtra("username",mUserName);
+                startActivity(intent);
             }
         });
 
