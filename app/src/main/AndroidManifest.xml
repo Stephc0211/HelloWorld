@@ -9,16 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Owen.OwenLayoutAndWidgetActivity"></activity>
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".Owen.LoginActivity">
+      
+        <activity android:name=".Stephanie.Aug2hwActivity"></activity>
+        <activity android:name=".Stephanie.StephLayoutAndWidgetActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Owen.LoginActivity"/>
+
+        <activity android:name=".Stephanie.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Stephanie.LoginActivity"></activity>
     </application>
 
 </manifest>

@@ -9,11 +9,13 @@
     <!-- main_activity -->
     <string name="activity_main_tv_logout">退出</string>
 
-    <string name="owen_layout_and_widget_activity_tv_text_one">第一个TV</string>
-    <string name="owen_layout_and_widget_activity_tv_text_two">第二个TV</string>
-    <string name="owen_layout_and_widget_activity_tv_text_three">第三个TV</string>
-
-
-
-
+    <string name="steph_layout_and_widget_activity_tv_text_one">第一个TV</string>
+    <string name="steph_layout_and_widget_activity_tv_text_two">第二个TV</string>
+    <string name="steph_layout_and_widget_activity_tv_text_three">第三个TV</string>
+    <string name="news_title">杭州新闻</string>
+    <string name="local_news">LOCAL NEWS</string>
+    <string name="change_city">切换城市</string>
+    <string name="news">新闻内容省略</string>
+    <string name="news_picture">新闻图片</string>
+    <string name="news_news">新闻资讯</string>
 </resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Stephanie.StephLayoutAndWidgetActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/color_pink1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_two"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="@color/color_pink1"
+            android:gravity="center"
+            android:text="@string/steph_layout_and_widget_activity_tv_text_one"
+            android:textColor="@color/color_btn_bg_black" />
+
+        <TextView
+            android:id="@+id/tv_three"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity=""
+            android:background="@color/color_pink1"
+            android:gravity="center"
+            android:text="@string/steph_layout_and_widget_activity_tv_text_one"
+            android:textColor="@color/color_btn_bg_black" />
+
+        <TextView
+            android:id="@+id/tv_one"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="@color/color_pink1"
+            android:gravity="center"
+            android:text="@string/steph_layout_and_widget_activity_tv_text_one"
+            android:textColor="@color/color_btn_bg_black" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:textAllCaps="false"
+            android:id="@+id/btn_one"
+            android:text="@string/steph_layout_and_widget_activity_tv_text_one"
+            android:gravity="center"
+            android:background="@color/design_default_color_primary"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_centerInParent="true"
+            />
+
+
+        <Button
+           android:id="@+id/btn_two"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/ic_launcher_foreground"
+            android:layout_toEndOf="@id/btn_one"
+            android:layout_marginStart="20dp"
+            />
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:background="@color/design_default_color_primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher_round"
+            />
+    </FrameLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

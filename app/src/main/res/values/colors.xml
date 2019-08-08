@@ -9,6 +9,12 @@
 
    <!-- 0-9 A B C D E F -->
     <color name="color_btn_tv_yellow">#FFFB00</color>
+    <color name="color_pink1">#FFF33F80</color>
+    <color name="color_pink2">#FFF085B0</color>
+    <color name="color_bg_grey">#FF504F4F</color>
+    <color name="color_purple1">#FFE1AAF0</color>
+    <color name="color_blue1">#081253</color>
+    <color name="color_bg_red">#9B0805</color>
 
 
 
