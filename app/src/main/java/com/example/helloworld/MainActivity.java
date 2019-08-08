@@ -54,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
      * 统一的启动方法
      */
     public static void start(Context context, String mUserName, int mPassword){
+
         Intent intent = new Intent(context,MainActivity.class);
         intent.putExtra(KEY_USER_NAME,mUserName);
         intent.putExtra("mPassword",mPassword);
