@@ -21,7 +21,7 @@ import static com.example.helloworld.MainActivity.KEY_USER_NAME;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private static final String TAG = "LoginActivity";
+    private static final String TAG = "LogLoginActivity";
 
 
 
@@ -40,6 +40,7 @@ public class LoginActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_login);
 
+        Log.d(TAG, "onCreate: " + TAG);
         mBtnRegister = findViewById(R.id.btn_register);
         mTvLogin = findViewById(R.id.tv_login);
         mEtUserName = findViewById(R.id.et_user_name);
@@ -48,13 +49,15 @@ public class LoginActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Toast.makeText(LoginActivity.this, "我点击了注册按钮 ",
-                        Toast.LENGTH_SHORT).show();
+//                Toast.makeText(LoginActivity.this, "我点击了注册按钮 ",
+//                        Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(LoginActivity.this, LoginActivity.class);
+                startActivity(intent);
             }
 
         });
 
-        mBtnRegister.setOnClickListener(new View.OnClickListener() {
+        mTvLogin.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
@@ -82,6 +85,43 @@ public class LoginActivity extends AppCompatActivity {
 
 
 
+    }
+
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d(TAG, "onStart: " + TAG);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.d(TAG, "onResume: " + TAG);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d(TAG, "onPause: " + TAG);
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d(TAG, "onStop: " + TAG);
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.d(TAG, "onRestart: " + TAG);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d(TAG, "onDestroy: " + TAG);
     }
 
     @Override
