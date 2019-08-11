@@ -9,18 +9,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".homework.FirstActivity"></activity>
-        <activity android:name=".homework.SaveInstance" />
-        <activity android:name=".Stephanie.Aug2hwActivity" />
-        <activity android:name=".Stephanie.StephLayoutAndWidgetActivity" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".Owen.LoginActivity" />
-        <activity android:name=".Stephanie.LoginActivity">
+        <activity android:name=".Owen.acitvity.OwenRecyclerViewActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".Owen.acitvity.OwenListViewActivity"/>
+        <activity android:name=".homework.FirstActivity" />
+        <activity android:name=".homework.SaveInstance" />
+        <activity android:name=".Stephanie.Aug2hwActivity" />
+        <activity android:name=".Stephanie.StephLayoutAndWidgetActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Owen.acitvity.LoginActivity" />
+        <activity android:name=".Stephanie.LoginActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
     </application>
 
