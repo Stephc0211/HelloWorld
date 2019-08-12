@@ -22,11 +22,14 @@
         <activity android:name=".Stephanie.StephLayoutAndWidgetActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".Stephanie.LoginActivity">
-            <!--intent-filter>
+
+            <!--
+            intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            <!- -</intent-filter>-->
+            <!- -</intent-filter>
+            -->
         </activity>
     </application>
 
