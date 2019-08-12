@@ -21,7 +21,6 @@
         <activity android:name=".Stephanie.Aug2hwActivity" />
         <activity android:name=".Stephanie.StephLayoutAndWidgetActivity" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".Owen.LoginActivity" />
         <activity android:name=".Stephanie.LoginActivity">
             <!--intent-filter>
                 <action android:name="android.intent.action.MAIN" />
