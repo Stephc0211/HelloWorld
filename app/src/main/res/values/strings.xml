@@ -18,4 +18,8 @@
     <string name="news">新闻内容省略</string>
     <string name="news_picture">新闻图片</string>
     <string name="news_news">新闻资讯</string>
+    <string name="purchase">购买</string>
+    <string name="front">正面</string>
+    <string name="back">背面</string>
+    <string name="item_name">手办</string>
 </resources>
