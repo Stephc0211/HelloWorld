@@ -6,7 +6,9 @@ public class Fruit {
 
     private int FruitImageUrl;
 
-    public Fruit(String apple, int front1) {
+    public Fruit(String fruitName, int fruitImageUrl) {
+        FruitName = fruitName;
+        FruitImageUrl = fruitImageUrl;
     }
 
     public String getFruitName() {

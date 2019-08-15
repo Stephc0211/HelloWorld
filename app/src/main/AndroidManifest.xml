@@ -10,13 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".homework.Activity.DrawerLayoutHW">
+        </activity>
+        <activity android:name=".homework.Activity.speech_bubble_activity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".homework.Activity.speech_bubble_activity" />
         <activity android:name=".homework.NewHwRecyclerViewActivity">
         </activity>
         <activity android:name=".homework.ListActivityHW" />
@@ -26,15 +27,9 @@
         <activity android:name=".Stephanie.StephLayoutAndWidgetActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".Stephanie.LoginActivity">
-
-            <!--
-            intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            <!- -</intent-filter>
-            -->
         </activity>
+
+        <activity android:name=".homework.Activity.ViewPagerHWActivity" />
     </application>
 
 </manifest>
