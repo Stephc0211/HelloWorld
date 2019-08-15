@@ -5,16 +5,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".homework.Activity.ListActivityHW">
+    tools:context=".homework.Activity.RecyclerViewHW">
 
-    <ListView
-        android:id="@+id/hw_lv"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/hw_recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:divider="@color/color_btn_bg_black"
-        android:dividerHeight="5dp"
+        android:layout_height="match_parent"
         >
 
-    </ListView>
+    </androidx.recyclerview.widget.RecyclerView>
 
 </LinearLayout>

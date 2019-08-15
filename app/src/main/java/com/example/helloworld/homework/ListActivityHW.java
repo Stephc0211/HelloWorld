@@ -40,7 +40,7 @@ public class ListActivityHW extends AppCompatActivity {
         //hwLv.setAdapter(mArrayAdapter);
 
         for(int i = 1; i<=20; i++){
-            Fruit fruit = new Fruit();
+            Fruit fruit = new Fruit("apple",R.id.iv_front);
             fruit.setFruitImageUrl(R.drawable.back1);
             fruit.setFruitName("后面");
             mFruitList.add(fruit);

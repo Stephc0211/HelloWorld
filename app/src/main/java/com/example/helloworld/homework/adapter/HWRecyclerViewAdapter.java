@@ -1,4 +1,4 @@
-package com.example.helloworld.Owen.adater;
+package com.example.helloworld.homework.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -14,25 +14,22 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.helloworld.Owen.bean.Fruit;
 import com.example.helloworld.R;
-import com.example.helloworld.homework.Activity.RecyclerViewHW;
 
 import java.util.List;
 
-public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAdapter.ViewHolder> {
+public class HWRecyclerViewAdapter extends RecyclerView.Adapter<HWRecyclerViewAdapter.ViewHolder> {
 
 
     private Context mContext;
     private int mResourceId;
     private List<Fruit> mFruitList;
 
-    public MyRecyclerViewAdapter(Context context, int resource , List<Fruit> fruitList){
+    public HWRecyclerViewAdapter(Context context, int resource , List<Fruit> fruitList){
         this.mContext = context;
         this.mResourceId = resource;
         this.mFruitList = fruitList;
     }
 
-    public MyRecyclerViewAdapter(RecyclerViewHW context, int item_hw_my_recycler_view, List<com.example.helloworld.homework.bean.Fruit> mFruitList) {
-    }
 
 
     @NonNull

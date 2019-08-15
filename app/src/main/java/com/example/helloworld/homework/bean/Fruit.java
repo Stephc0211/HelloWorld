@@ -6,6 +6,9 @@ public class Fruit {
 
     private int FruitImageUrl;
 
+    public Fruit(String apple, int front1) {
+    }
+
     public String getFruitName() {
         return FruitName;
     }

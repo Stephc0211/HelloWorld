@@ -22,4 +22,6 @@
     <string name="front">正面</string>
     <string name="back">背面</string>
     <string name="item_name">手办</string>
+    <string name="main_menu">HOME</string>
+    <string name="menu">MENU</string>
 </resources>
