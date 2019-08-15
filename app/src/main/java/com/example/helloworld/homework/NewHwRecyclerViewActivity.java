@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import com.example.helloworld.R;
 import com.example.helloworld.homework.adapter.FruitAdapter;
@@ -23,6 +24,7 @@ public class NewHwRecyclerViewActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.new_hw_recycler_layout);
+        Log.d("NewRecyclerView","");
         initFruits();
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.new_hw_recycler_view);
         StaggeredGridLayoutManager layoutManager =

@@ -14,7 +14,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.helloworld.Owen.bean.Fruit;
 import com.example.helloworld.R;
-import com.example.helloworld.homework.Activity.RecyclerViewHW;
 
 import java.util.List;
 
@@ -31,7 +30,7 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
         this.mFruitList = fruitList;
     }
 
-    public MyRecyclerViewAdapter(RecyclerViewHW context, int item_hw_my_recycler_view, List<com.example.helloworld.homework.bean.Fruit> mFruitList) {
+    public MyRecyclerViewAdapter(RecyclerView context, int item_hw_my_recycler_view, List<com.example.helloworld.homework.bean.Fruit> mFruitList) {
     }
 
 
