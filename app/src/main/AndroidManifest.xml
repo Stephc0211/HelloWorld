@@ -12,11 +12,11 @@
         <activity android:name=".homework.Activity.DrawerLayoutHW">
         </activity>
         <activity android:name=".homework.Activity.speech_bubble_activity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
         </activity>
         <activity android:name=".homework.NewHwRecyclerViewActivity">
         </activity>
@@ -30,6 +30,14 @@
         </activity>
 
         <activity android:name=".homework.Activity.ViewPagerHWActivity" />
+
+        <activity android:name=".Owen.acitvity.OwenFragmentActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
