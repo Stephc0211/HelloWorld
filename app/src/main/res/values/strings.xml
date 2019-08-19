@@ -26,8 +26,12 @@
     <string name="menu">MENU</string>
 
 
-
     <string name="fragment_work_text_view">Work Fragment</string>
     <string name="fragment_setting_text_view">Setting Fragment</string>
+
+    <string name="btn_start_service">Start Service</string>
+    <string name="btn_stop_service">Stop Service</string>
+    <string name="btn_bind_service">Bind Service</string>
+    <string name="btn_unbind_service">Unbind Service</string>
 
 </resources>
