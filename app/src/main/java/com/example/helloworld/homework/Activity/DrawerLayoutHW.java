@@ -24,7 +24,7 @@ public class DrawerLayoutHW extends AppCompatActivity {
         mDrawerLayout = findViewById(R.id.dw_main);
 
         mTvMainMenu = findViewById(R.id.tv_main_menu);
-        mDrawerLayout.setOnClickListener(new View.OnClickListener(){
+        mTvMainMenu.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 if (null != mDrawerLayout){

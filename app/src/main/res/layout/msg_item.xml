@@ -10,8 +10,8 @@
         android:id="@+id/left_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="left"
-        android:background="@drawable/front1">
+        android:layout_gravity="start"
+        android:background="@drawable/bg_bubble_green">
 
         <TextView
             android:id="@+id/left_msg"
@@ -19,7 +19,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="10dp"
-            android:textColor="#fff"/>
+            android:textColor="@color/color_bg_red"
+            android:text="@string/app_name"/>
 
     </LinearLayout>
 
@@ -27,15 +28,16 @@
         android:id="@+id/right_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:background="@drawable/back1">
+        android:layout_gravity="end"
+        android:background="@drawable/bg_bubble_green">
 
         <TextView
             android:id="@+id/right_msg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_margin="10dp"/>
+            android:layout_margin="10dp"
+            android:text="@string/app_name"/>
 
     </LinearLayout>
 

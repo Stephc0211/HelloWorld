@@ -1,4 +1,4 @@
-package com.example.helloworld.Owen.acitvity;
+package com.example.helloworld.Owen.activity;
 
 import androidx.appcompat.app.AppCompatActivity;;
 import android.os.Bundle;

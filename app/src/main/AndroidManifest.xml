@@ -9,31 +9,45 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".homework.Activity.DrawerLayoutHW">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <service
+            android:name=".Owen.OwenTestService"
+            android:enabled="true"
+            android:exported="true"></service>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <activity android:name=".Owen.activity.OwenTestServiceActivity">
+
+             <intent-filter>
+             <action android:name="android.intent.action.MAIN" />
+
+
+             <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>
         </activity>
-        <activity android:name=".homework.Activity.speech_bubble_activity" />
-        <activity android:name=".homework.NewHwRecyclerViewActivity">
+        <activity android:name=".homework.Activity.DrawerLayoutHW" />
+        <activity android:name=".homework.Activity.speech_bubble_activity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
+        <activity android:name=".homework.NewHwRecyclerViewActivity" />
         <activity android:name=".homework.ListActivityHW" />
         <activity android:name=".homework.FirstActivity" />
         <activity android:name=".homework.SaveInstance" />
         <activity android:name=".Stephanie.Aug2hwActivity" />
         <activity android:name=".Stephanie.StephLayoutAndWidgetActivity" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".Stephanie.LoginActivity">
+        <activity android:name=".Stephanie.LoginActivity" />
+        <activity android:name=".homework.Activity.ViewPagerHWActivity" />
+        <activity android:name=".Owen.activity.OwenFragmentActivity">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
 
-            <!--
-            intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            <!- -</intent-filter>
-            -->
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
         </activity>
     </application>
 

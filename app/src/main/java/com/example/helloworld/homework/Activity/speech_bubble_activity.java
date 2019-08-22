@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Context;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -41,13 +43,14 @@ public class speech_bubble_activity extends AppCompatActivity {
         msgRecyclerView = (RecyclerView) findViewById(R.id.msg_recycler_view);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         msgRecyclerView.setLayoutManager(layoutManager);
-        adapter = new MsgAdapter(msgList);
+        adapter = new MsgAdapter(msgList, speech_bubble_activity.this);
         msgRecyclerView.setAdapter(adapter);
         send.setOnClickListener(new View.OnClickListener(){
             @Override
             public  void onClick (View v) {
                 String content = inputText.getText().toString();
-                if(!"".equals(content)){
+                // if(!"".equals(content)){
+                if(!TextUtils.isEmpty(content)){
                     Msg msg = new Msg(content, Msg.TYPE_SENT);
                     msgList.add(msg);
                     adapter.notifyItemInserted(msgList.size() - 1);
