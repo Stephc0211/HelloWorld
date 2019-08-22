@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_bg_grey"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_chat"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/tab_chat"
+            android:gravity="center"
+            android:text="通讯"
+            android:textColor="@drawable/tab_text_bg" />
+
+        <RadioButton
+            android:id="@+id/rb_safari"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/tab_work_bg"
+            android:gravity="center"
+            android:text="发现"
+            android:textColor="@drawable/tab_text_bg"/>
+
+        <RadioButton
+            android:id="@+id/rb_user"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/tab_user"
+            android:gravity="center"
+            android:text="我"
+            android:textColor="@drawable/tab_text_bg"/>
+
+        <RadioButton
+            android:id="@+id/rb_setting_hw"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/tab_setting_hw"
+            android:gravity="center"
+            android:text="设置"
+            android:textColor="@drawable/tab_text_bg" />
+
+    </RadioGroup>
+
+        <FrameLayout
+            android:id="@+id/fl_main_container_hw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/rg_main"
+            android:layout_marginBottom="2dp">
+        </FrameLayout>
+
+</RelativeLayout>

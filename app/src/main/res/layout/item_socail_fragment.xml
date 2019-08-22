@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="用户"
+            android:textColor="@color/color_btn_bg_black"
+            android:textSize="20dp"
+            android:gravity="center_horizontal" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_launcher"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="70dp"
+        android:background="@color/color_bg_grey"
+        android:text="聊天"
+        android:textColor="@color/color_btn_bg_white"
+        android:textSize="30sp" />
+
+</LinearLayout>

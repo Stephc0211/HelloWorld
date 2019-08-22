@@ -29,7 +29,7 @@ public class ListActivityHW extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.list_ac_hw);
+        setContentView(R.layout.activity_owen_list_view);
         hwLv = findViewById(R.id.hw_lv);
 
         //for(int i=1; i<=10;i++){

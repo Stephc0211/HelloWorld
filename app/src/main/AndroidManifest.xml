@@ -10,19 +10,25 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <service
+            android:name=".homework.HwTestService"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+
+        <activity android:name=".homework.Activity.HwTestServiceActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
             android:name=".Owen.OwenTestService"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true" />
 
-        <activity android:name=".Owen.activity.OwenTestServiceActivity">
-
-             <intent-filter>
-             <action android:name="android.intent.action.MAIN" />
-
-
-             <category android:name="android.intent.category.LAUNCHER" />
-             </intent-filter>
-        </activity>
+        <activity android:name=".Owen.activity.OwenTestServiceActivity" />
         <activity android:name=".homework.Activity.DrawerLayoutHW" />
         <activity android:name=".homework.Activity.speech_bubble_activity">
 
@@ -43,11 +49,15 @@
         <activity android:name=".Stephanie.LoginActivity" />
         <activity android:name=".homework.Activity.ViewPagerHWActivity" />
         <activity android:name=".Owen.activity.OwenFragmentActivity">
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
 
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".homework.Activity.HWFragementActivity">
         </activity>
     </application>
 

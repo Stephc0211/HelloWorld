@@ -1,6 +1,4 @@
-package com.example.helloworld.Owen.activity;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.helloworld.homework.Activity;
 
 import android.os.Bundle;
 import android.view.View;
@@ -8,15 +6,16 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.helloworld.Owen.adater.MyListViewAdapter;
 import com.example.helloworld.Owen.bean.Fruit;
 import com.example.helloworld.R;
-import com.example.helloworld.homework.Activity.FragmentListViewActivity;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class OwenListViewActivity extends AppCompatActivity {
+public class FragmentListViewActivity extends AppCompatActivity {
 
     private ListView mLvMyLv;
 //    private ArrayAdapter<String> mArrayAdapter;
@@ -28,8 +27,15 @@ public class OwenListViewActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_owen_list_view);
-        mLvMyLv = findViewById(R.id.lv_my_lv);
+        setContentView(R.layout.fragment_hw_social);
+        mLvMyLv = findViewById(R.id.hw_lv);
+
+
+//        for (int i = 0; i < 100; i++){
+//            mStringList.add("Stephanie_" + i);
+//        }
+//        mArrayAdapter = new ArrayAdapter<>(OwenListViewActivity.this,android.R.layout.simple_list_item_1,mStringList);
+//        mLvMyLv.setAdapter(mArrayAdapter);
 
         for (int i = 0; i < 20; i++){
             Fruit fruit = new Fruit();
@@ -38,14 +44,14 @@ public class OwenListViewActivity extends AppCompatActivity {
             mFruitList.add(fruit);
         }
 
-        myListViewAdapter = new MyListViewAdapter(OwenListViewActivity.this, R.layout.item_owen_my_list_view, mFruitList);
+        myListViewAdapter = new MyListViewAdapter(FragmentListViewActivity.this, R.layout.item_socail_fragment, mFruitList);
         mLvMyLv.setAdapter(myListViewAdapter);
 
         mLvMyLv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
               //  Toast.makeText(OwenListViewActivity.this,"you click item " + i + " " + mStringList.get(i) ,Toast.LENGTH_SHORT).show();
-                Toast.makeText(OwenListViewActivity.this,"you click item " + i + " " + mFruitList.get(i).getFruitName() ,Toast.LENGTH_SHORT).show();
+                Toast.makeText(FragmentListViewActivity.this,"you click item " + i + " " + mFruitList.get(i).getFruitName() ,Toast.LENGTH_SHORT).show();
             }
         });
     }
