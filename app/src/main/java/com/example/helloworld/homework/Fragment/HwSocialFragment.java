@@ -1,10 +1,11 @@
 package com.example.helloworld.homework.Fragment;
 
-import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ListView;
 
 import androidx.annotation.NonNull;
@@ -14,9 +15,10 @@ import androidx.fragment.app.Fragment;
 import com.example.helloworld.Owen.adater.MyListViewAdapter;
 import com.example.helloworld.Owen.bean.Fruit;
 import com.example.helloworld.R;
-import com.example.helloworld.homework.Activity.FragmentListViewActivity;
 import com.example.helloworld.homework.Activity.HWFragementActivity;
-import com.example.helloworld.homework.adapter.ListViewAdapterHW;
+import com.example.helloworld.homework.Activity.speech_bubble_activity;
+import com.example.helloworld.homework.adapter.FragmentListAdapter;
+import com.example.helloworld.homework.bean.MyItem;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,8 +26,9 @@ import java.util.List;
 public class HwSocialFragment extends Fragment {
 
     private ListView mLvFragment;
-    private MyListViewAdapter mListViewAdapterHw;
-    private List<Fruit> mFruitList = new ArrayList<>();
+    private FragmentListAdapter fragmentListAdapter;
+    private List<MyItem> myItemList = new ArrayList<>();
+
 
 
     @Nullable
@@ -42,16 +45,15 @@ public class HwSocialFragment extends Fragment {
         mLvFragment = getActivity().findViewById(R.id.hw_fragment_lv);
 
         for (int i = 0; i < 20; i++) {
-            Fruit fruit = new Fruit();
-            fruit.setFruitImageUrl(R.mipmap.ic_launcher);
-            fruit.setFruitName("Stephanie_" + i);
-            mFruitList.add(fruit);
+            MyItem myItem = new MyItem();
+            myItem.setProfilePicUrl(R.mipmap.ic_launcher);
+            myItem.setUserName("Stephanie_" + i);
+            myItemList.add(myItem);
 
         }
 
-        mListViewAdapterHw = new MyListViewAdapter(getActivity(), R.layout.item_social_fragment, mFruitList);
-        mLvFragment.setAdapter(mListViewAdapterHw);
-
+        fragmentListAdapter = new FragmentListAdapter(getActivity(), R.layout.item_social_fragment, myItemList);
+        mLvFragment.setAdapter(fragmentListAdapter);
 
     }
 

@@ -10,9 +10,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.recyclerview.widget.RecyclerView;
-
-import com.example.helloworld.Owen.adater.MyListViewAdapter;
 import com.example.helloworld.R;
 import com.example.helloworld.homework.bean.MyItem;
 

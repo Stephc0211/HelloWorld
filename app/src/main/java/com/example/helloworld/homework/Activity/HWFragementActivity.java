@@ -1,6 +1,9 @@
 package com.example.helloworld.homework.Activity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -11,6 +14,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.example.helloworld.MainActivity;
 import com.example.helloworld.Owen.Fragment.OwenSettingFragment;
 import com.example.helloworld.Owen.Fragment.OwenWorkFragment;
 import com.example.helloworld.R;
@@ -33,6 +37,8 @@ public class HWFragementActivity extends AppCompatActivity implements RadioGroup
     private RadioButton mRgSettings;
     private RadioButton mRgSocial;
 
+    private Button button;
+
     @Override
     protected  void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,6 +60,17 @@ public class HWFragementActivity extends AppCompatActivity implements RadioGroup
 
         mRgUser.setChecked(true);
         replaceFragment(mUserFragment);
+
+        button = (Button) findViewById(R.id.btn_fragment_item);
+        button.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent();
+                intent.setClass(HWFragementActivity.this,speech_bubble_activity.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 

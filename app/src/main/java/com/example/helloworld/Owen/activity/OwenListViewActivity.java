@@ -11,7 +11,6 @@ import android.widget.Toast;
 import com.example.helloworld.Owen.adater.MyListViewAdapter;
 import com.example.helloworld.Owen.bean.Fruit;
 import com.example.helloworld.R;
-import com.example.helloworld.homework.Activity.FragmentListViewActivity;
 
 import java.util.ArrayList;
 import java.util.List;

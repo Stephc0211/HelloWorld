@@ -26,13 +26,6 @@
         <activity android:name=".Owen.activity.OwenTestServiceActivity" />
         <activity android:name=".homework.Activity.DrawerLayoutHW" />
         <activity android:name=".homework.Activity.speech_bubble_activity">
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
         </activity>
         <activity android:name=".homework.NewHwRecyclerViewActivity" />
         <activity android:name=".homework.ListActivityHW" />
