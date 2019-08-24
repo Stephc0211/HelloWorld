@@ -33,9 +33,9 @@ public class HwTestServiceActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hw_test_service);
 
-        mBtnStartService = findViewById(R.id.btn_start_service);
+        mBtnStartService = findViewById(R.id.btn_hw_start_service);
         mBtnStopService = findViewById(R.id.btn_hw_stop_service);
-        mBtnBindService = findViewById(R.id.btn_bind_service);
+        mBtnBindService = findViewById(R.id.btn_hw_bind_service);
         mBtnUnbindService = findViewById(R.id.btn_hw_unbind_service);
 
         serviceConnection = new ServiceConnection() {

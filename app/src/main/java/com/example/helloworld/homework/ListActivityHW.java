@@ -30,7 +30,7 @@ public class ListActivityHW extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_owen_list_view);
-        hwLv = findViewById(R.id.hw_lv);
+        hwLv = findViewById(R.id.hw_fragment_lv);
 
         //for(int i=1; i<=10;i++){
            // mStringList.add("手办 " + i);}

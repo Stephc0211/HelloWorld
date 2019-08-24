@@ -8,9 +8,9 @@
     tools:context=".homework.Activity.FragmentListViewActivity">
 
     <ListView
-        android:id="@+id/hw_lv"
+        android:id="@+id/hw_fragment_lv"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:divider="@color/color_btn_bg_black"
         android:dividerHeight="5dp"
         >

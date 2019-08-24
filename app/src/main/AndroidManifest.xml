@@ -15,12 +15,7 @@
             android:exported="true">
         </service>
 
-        <activity android:name=".homework.Activity.HwTestServiceActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <activity android:name=".homework.Activity.HwTestServiceActivity">
         </activity>
 
         <service
@@ -58,6 +53,11 @@
             <!-- </intent-filter> -->
         </activity>
         <activity android:name=".homework.Activity.HWFragementActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 

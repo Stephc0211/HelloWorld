@@ -60,7 +60,7 @@ public class HWFragementActivity extends AppCompatActivity implements RadioGroup
     private void replaceFragment(Fragment fragment) {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.fl_main_container, fragment);
+        fragmentTransaction.replace(R.id.fl_main_container_hw, fragment);
         fragmentTransaction.commit();
 
     }
