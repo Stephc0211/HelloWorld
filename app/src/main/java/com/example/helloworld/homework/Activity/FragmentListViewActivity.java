@@ -60,14 +60,5 @@ public class FragmentListViewActivity extends AppCompatActivity {
             }
         });
 
-        Button button = (Button) findViewById(R.id.btn_fragment_item);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(FragmentListViewActivity.this, SpeechBubbleActivity.class);
-                startActivity(intent);
-            }
-        });
-
     }
 }
