@@ -1,8 +1,10 @@
 package com.example.helloworld.homework.Activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -43,6 +45,8 @@ public class FragmentListViewActivity extends AppCompatActivity {
             item.setUserName("Stephanie_" + i);
             //item.setChatButton(R.id.fragment_list_btn);
             mItemList.add(item);
+
+
         }
 
         fragmentListAdapter = new FragmentListAdapter(FragmentListViewActivity.this, R.layout.item_social_fragment, mItemList);
@@ -55,5 +59,15 @@ public class FragmentListViewActivity extends AppCompatActivity {
                 Toast.makeText(FragmentListViewActivity.this,"you click item " + i + " " + mItemList.get(i).getUserName() ,Toast.LENGTH_SHORT).show();
             }
         });
+
+        Button button = (Button) findViewById(R.id.btn_fragment_item);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FragmentListViewActivity.this, SpeechBubbleActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

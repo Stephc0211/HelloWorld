@@ -4,15 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.LinearLayout;
 
-import com.example.helloworld.MainActivity;
 import com.example.helloworld.R;
 import com.example.helloworld.homework.Msg;
 import com.example.helloworld.homework.adapter.MsgAdapter;
@@ -20,7 +17,7 @@ import com.example.helloworld.homework.adapter.MsgAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
-public class speech_bubble_activity extends AppCompatActivity {
+public class SpeechBubbleActivity extends AppCompatActivity {
 
     private List<Msg> msgList = new ArrayList<>();
 
@@ -43,7 +40,7 @@ public class speech_bubble_activity extends AppCompatActivity {
         msgRecyclerView = (RecyclerView) findViewById(R.id.msg_recycler_view);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         msgRecyclerView.setLayoutManager(layoutManager);
-        adapter = new MsgAdapter(msgList, speech_bubble_activity.this);
+        adapter = new MsgAdapter(msgList, SpeechBubbleActivity.this);
         msgRecyclerView.setAdapter(adapter);
         send.setOnClickListener(new View.OnClickListener(){
             @Override

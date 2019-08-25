@@ -25,7 +25,7 @@
 
         <activity android:name=".Owen.activity.OwenTestServiceActivity" />
         <activity android:name=".homework.Activity.DrawerLayoutHW" />
-        <activity android:name=".homework.Activity.speech_bubble_activity">
+        <activity android:name=".homework.Activity.SpeechBubbleActivity">
         </activity>
         <activity android:name=".homework.NewHwRecyclerViewActivity" />
         <activity android:name=".homework.ListActivityHW" />
